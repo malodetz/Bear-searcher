@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Images</folder>
+	<filename>_2016-05-12 14-20-10_2145_2R.JPG</filename>
+	<path>D:\Programs\Practics Pipeleine\Images\_2016-05-12 14-20-10_2145_2R.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>7360</width>
+		<height>4912</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Bear</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>914</xmin>
+			<ymin>1363</ymin>
+			<xmax>993</xmax>
+			<ymax>1442</ymax>
+		</bndbox>
+	</object>
+</annotation>
