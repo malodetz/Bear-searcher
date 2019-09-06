@@ -1,3 +1,4 @@
+import os
 import xml.etree.ElementTree as ET
 
 from Rectangle import *
@@ -15,3 +16,9 @@ def getRectangle(filename):
             ymax = int(box.find("ymax").text)
             xmax = int(box.find("xmax").text)
     return Rectangle(ymin, xmin, ymax, xmax)
+
+
+def writeRectangle(filename, rectangle, type):
+    name = "Results/" + filename.split(".")[0] + ".xml"
+    print(os.path.exists(name))
+    #     TODO
