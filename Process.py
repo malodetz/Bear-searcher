@@ -31,7 +31,6 @@ def process_byHSV(name):
     mask1 = hsv_img[:, :, 0] >= 35
     mask2 = hsv_img[:, :, 0] <= 85
     mask = mask1 & mask2
-    mask = np.invert(mask)
     mask = 255 * mask.astype(np.uint8)
     components = cv2.connectedComponentsWithStats(mask, 8, cv2.CV_16U)
     ans = []
