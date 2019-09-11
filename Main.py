@@ -4,7 +4,8 @@ from Converter import *
 from Process import *
 
 imagenames = os.listdir("Images")
-shutil.rmtree("Results")
+if os.path.exists("Results"):
+    shutil.rmtree("Results")
 os.mkdir("Results")
 for filename in imagenames:
     rects = process_byHSV(filename)
