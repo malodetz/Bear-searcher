@@ -8,7 +8,7 @@ if os.path.exists("Results"):
     shutil.rmtree("Results")
 os.mkdir("Results")
 for filename in imagenames:
-    rects = process_byHSV(filename)
+    rects = process_byBlue(filename)
     bear = getRectangle(filename)
     ok = False
     for rect in rects:
