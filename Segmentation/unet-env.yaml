@@ -1,0 +1,25 @@
+name: unet
+channels:
+  - defaults
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.6
+  - pip=19.1.1=py36_0
+  - pytorch=1.1.0
+  - torchvision=0.3.0
+  - pandas=0.24.2
+  - tqdm=4.31.1
+  - imgaug>=0.2.8
+  - nibabel
+  - ignite
+  - pip:
+    - dash>=0.43.0
+    - dash-daq==0.1.5
+    - filterpy>=1.4.5
+    - pykitti
+    - cprint==1.1
+    - mlflow==1.0.0
+    - boto3==1.9.190
+    - albumentations
+    - jpeg4py
